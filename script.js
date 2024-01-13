@@ -13,6 +13,10 @@ function func4(){
 function func5(){
     window.location.assign("rohtas.html");
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7b79dbf4d2ebecb78c4671cd52abc52ea3b7a307
 let avlkey=[
     'Patna',
     'Gaya',
@@ -78,4 +82,9 @@ closeBtn.addEventListener("click",function(){
     inputbox.value='';
     resultbox.innerHTML='';
     closeBtn.classList.remove("active");
+<<<<<<< HEAD
 });
+=======
+});
+
+>>>>>>> 7b79dbf4d2ebecb78c4671cd52abc52ea3b7a307

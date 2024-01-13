@@ -8,33 +8,47 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="utils.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="search.css">
+    <script src="https://kit.fontawesome.com/2dcda8359a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="main">
         <video src="images/bihar (1).mp4" autoplay loop muted plays-inline></video>
-
-        <nav>
-            <img width="53px" src="images/1.svg" alt="">
-            <ul>
-                <li><a href="#jao">About Bihar</a></li>
-                <li><a href="#inspire">Inspiration</a></li>
-                <li><a href="#chhath">Culture</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+        
+        <nav class="header"> 
+            <div>
+                <img width="190px" src="images/1.svg" alt="" class="logo">
+            </div>  
+            <div class="search-box">
+                <div class="search">
+                   <input type="text" id="input-box" placeholder="Search Popular Places"
+                     autocomplete="off">
+                     <button class="closebtn"><i class="fa-solid fa-xmark"></i></button>
+                   <button onclick="func()" class="searchbtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="result-box"></div>
+                
+            </div>        
+            <ul class="list">
+                <li><a href="#jao" class="about">About Bihar</a></li>
+                <li><a href="#inspire" class="about">Inspiration</a></li>
+                <li><a href="#chhath" class="about">Culture</a></li>
+                <li><a href="#contact" class="about">Contact Us</a></li>
             </ul>
         </nav>
+
         <div class="box">
             <h1>Welcome to</h1>
             <h1>Bihar</h1>
-            <!-- <div class="box expo">
-                <a href="#">Explore</a>
-            </div> -->
         </div>
     </div>
+
     <hr>
     <section class="some">
         <div class="do">
-            <h1>Here are some best places <br> to start your journey</h1>
+            <!-- <h1>Here are some best places <br> to start your journey</h1> -->
+            <h1>Popular Places</h1>
         </div>
         <div class="first">
             <div class="kuchh">
@@ -46,7 +60,7 @@
                         <img src="images/patna.jpg" alt="">
                         <div class="info">
                             <div class="title">Patna <br>
-                                <button onclick="func1()">clickme</button>
+                                <button onclick="func1()">Know More</button>
                             </div>
                             <p>Patna historically known as Pataliputra <br> is the capital and largest city of the state
                                 of
@@ -62,7 +76,7 @@
                         <img src="images/gaya.jpeg" alt="">
                         <div class="info">
                             <div class="title">Gaya <br>
-                                <button onclick="func2()">clickme</button>
+                                <button onclick="func2()">Know More</button>
                             </div>
                             <p>Gaya is a holy city beside the Falgu River <br> in the northeast Indian state of Bihar
                             </p>
@@ -77,7 +91,7 @@
                         <img src="images/rajgir.jpeg" alt="">
                         <div class="info">
                             <div class="title">Rajgir <br>
-                                <button onclick="func3()">clickme</button>
+                                <button onclick="func3()">Know More</button>
                             </div>
                             <p>Rajgir was the first capital of the ancient kingdom of Magadha.</p>
                         </div>
@@ -93,7 +107,7 @@
                         <img src="images/buxar.jpg" alt="">
                         <div class="info">
                             <div class="title">Buxar <br>
-                                <button onclick="func4()">clickme</button>
+                                <button onclick="func4()">Know More</button>
                             </div>
                             <p>Buxar also known as mini kashi <br> famous for its battle and ram rekha ghat</p>
                         </div>
@@ -107,7 +121,7 @@
                         <img src="images/rohtas.jpeg" alt="">
                         <div class="info">
                             <div class="title">Rohtas <br>
-                                <button onclick="func5()">clickme</button>
+                                <button onclick="func5()">Know More</button>
                             </div>
                             <p>Sasaram and the Kaimur Range contain waterfalls, lakes, rivers and picturesque locations
                             </p>

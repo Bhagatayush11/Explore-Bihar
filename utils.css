@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    /* box-sizing: border-box; */
 }
 
 .main1p {
@@ -15,62 +16,71 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.main1g{
+
+.main1g {
     height: 80vh;
     background-image: url("images/gayamain.jpg");
     position: relative;
     width: 100vw;
     height: 80vh;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
 }
-.main1r{
+
+.main1r {
     height: 80vh;
     background-image: url("images/tourist-places-in-rajgir1.png");
     position: relative;
     width: 100vw;
     height: 80vh;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
 }
-.main1b{
+
+.main1b {
     height: 80vh;
     background-image: url("images/buxarmain.jpeg");
     position: relative;
     width: 100vw;
     height: 80vh;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
 }
-.main1rs{
+
+.main1rs {
     height: 80vh;
     background-image: url("images/rohtasmain.jpg");
     position: relative;
     width: 100vw;
     height: 80vh;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
 }
+
 .logof {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.logof h1{
+
+.logof h1 {
     font-size: 50px;
     font-weight: bold;
 }
-.logof > :nth-child(2){
+
+.logof> :nth-child(2) {
     font-size: 24px;
-  position: relative;
-  top: 50px;
+    position: relative;
+    top: 50px;
 }
-.logof > :nth-child(3){
+
+.logof> :nth-child(3) {
     font-size: 24px;
-  position: relative;
-  top: 60px;
+    position: relative;
+    top: 60px;
 }
+
 .box1 {
     height: 80vh;
     width: 100%;
@@ -88,11 +98,13 @@
 .secimg img {
     width: 40vh;
     width: 80vh;
+    /* width: 100%; */
     position: relative;
     top: 160px;
     right: 40px;
     height: auto;
     transition: 0.5s;
+    border-radius: 20px;
 }
 
 .secimg img:hover {
@@ -134,8 +146,27 @@
 .height {
     height: 100vh;
 }
-/* @media screen and (max-width: 600px) {
-    .mst {
-        flex-basis: 100%;
+
+@media screen and (max-width: 768px) {
+    .logof h1 {
+        font-size: 26px;
+        font-weight: bolder;
     }
-} */
+    .logof > :nth-child(2){
+        font-size: 18px;
+        color: white;
+        z-index: 1;
+        text-align: center;
+    }
+    .logof > :nth-child(3){
+        font-size: 18px;
+        color: white;
+        z-index: 1;
+        text-align: center;
+    }
+    /* .secimg img{
+        width: 30vw;
+        height: auto;
+    } */
+    
+}
